@@ -5,6 +5,7 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../forgot_password/forgot_password_widget.dart';
+import '../settings/settings_widget.dart';
 import '../sign_up/sign_up_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -39,7 +40,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         backgroundColor: Color(0xFF203040),
         automaticallyImplyLeading: false,
         actions: [
-          CustomCloseIconWidget(),
+          InkWell(
+            onTap: () async {
+              await Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SettingsWidget(),
+                ),
+              );
+            },
+            child: CustomCloseIconWidget(),
+          ),
         ],
         centerTitle: true,
         elevation: 0,
@@ -170,7 +181,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Padding(
                             padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                                EdgeInsetsDirectional.fromSTEB(0, 50, 0, 10),
                             child: FFButtonWidget(
                               onPressed: () async {
                                 final user = await signInWithEmail(
@@ -263,29 +274,32 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                FFButtonWidget(
-                  onPressed: () async {
-                    await Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SignUpWidget(),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                  child: FFButtonWidget(
+                    onPressed: () async {
+                      await Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpWidget(),
+                        ),
+                      );
+                    },
+                    text: 'SIGN UP',
+                    options: FFButtonOptions(
+                      width: 300,
+                      height: 40,
+                      color: FlutterFlowTheme.primaryColor,
+                      textStyle: FlutterFlowTheme.subtitle2.override(
+                        fontFamily: 'Poppins',
+                        color: Colors.white,
                       ),
-                    );
-                  },
-                  text: 'SIGN UP',
-                  options: FFButtonOptions(
-                    width: 300,
-                    height: 40,
-                    color: FlutterFlowTheme.primaryColor,
-                    textStyle: FlutterFlowTheme.subtitle2.override(
-                      fontFamily: 'Poppins',
-                      color: Colors.white,
+                      borderSide: BorderSide(
+                        color: Colors.transparent,
+                        width: 1,
+                      ),
+                      borderRadius: 5,
                     ),
-                    borderSide: BorderSide(
-                      color: Colors.transparent,
-                      width: 1,
-                    ),
-                    borderRadius: 5,
                   ),
                 ),
               ],
