@@ -1,3 +1,5 @@
+import '../currency/currency_widget.dart';
+import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../home_page/home_page_widget.dart';
@@ -62,15 +64,29 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(20, 20, 0, 0),
-                      child: Text(
-                        '<- Settings',
-                        style: FlutterFlowTheme.bodyText1.override(
-                          fontFamily: 'Poppins',
-                          color: FlutterFlowTheme.tertiaryColor,
-                          fontSize: 20,
-                        ),
+                    FlutterFlowIconButton(
+                      borderColor: Colors.transparent,
+                      borderWidth: 1,
+                      buttonSize: 60,
+                      icon: Icon(
+                        Icons.arrow_back_sharp,
+                        color: Color(0xFFC2C2C2),
+                        size: 25,
+                      ),
+                      onPressed: () async {
+                        await Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CurrencyWidget(),
+                          ),
+                        );
+                      },
+                    ),
+                    Text(
+                      'Settings',
+                      style: FlutterFlowTheme.title1.override(
+                        fontFamily: 'Poppins',
+                        color: Color(0xFFA8A8A8),
                       ),
                     ),
                   ],
