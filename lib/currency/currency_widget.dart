@@ -88,312 +88,98 @@ class _CurrencyWidgetState extends State<CurrencyWidget> {
                 ),
               ],
             ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(2),
-                          bottomRight: Radius.circular(0),
-                          topLeft: Radius.circular(0),
-                          topRight: Radius.circular(0),
-                        ),
-                        border: Border.all(
-                          color: Color(0xFF15222E),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(35, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'USDT',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.zero,
+                scrollDirection: Axis.vertical,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF233446),
                     ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.transparent,
-                          )
-                        ],
-                        border: Border.all(
-                          color: Color(0xFF272424),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 30, 0, 0),
+                      child: Text(
+                        'USDT',
+                        style: FlutterFlowTheme.title2.override(
+                          fontFamily: 'Poppins',
+                          color: Color(0xFFC2C2C2),
                         ),
                       ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'BTC',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xFF15222E),
-                          )
-                        ],
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'INR',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xFF15222E),
-                          )
-                        ],
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'IDR',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xFF15222E),
-                          )
-                        ],
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'RUB',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Container(
-                      width: 500,
-                      height: 60,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF233446),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(30, 0, 0, 0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Text(
-                              'EUR',
-                              style: FlutterFlowTheme.bodyText1.override(
-                                fontFamily: 'Poppins',
-                                color: Color(0xFFC2C2C2),
-                                fontSize: 18,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF142231),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(25, 0, 0, 0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
-                          child: Text(
-                            'Display same curency while plaing orders?',
-                            style: FlutterFlowTheme.bodyText1.override(
-                              fontFamily: 'Poppins',
-                              color: Color(0xFFA8A8A8),
-                              fontSize: 12,
-                            ),
-                          ),
-                        ),
-                      ],
                     ),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width * 5,
-                  height: 70,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF233446),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(25, 0, 0, 0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Display for orders ?',
-                          style: FlutterFlowTheme.bodyText1.override(
-                            fontFamily: 'Poppins',
-                            color: Color(0xFFA8A8A8),
-                            fontSize: 14,
-                          ),
+                  Container(
+                    width: 100,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF15232E),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 30, 0, 0),
+                      child: Text(
+                        'BTC',
+                        style: FlutterFlowTheme.title2.override(
+                          fontFamily: 'Poppins',
+                          color: Color(0xFFC2C2C2),
                         ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(140, 0, 0, 0),
-                          child: FlutterFlowIconButton(
-                            borderColor: Colors.transparent,
-                            borderRadius: 10,
-                            borderWidth: 1,
-                            buttonSize: 60,
-                            icon: Icon(
-                              Icons.check,
-                              color: Color(0xFFC2C2C2),
-                              size: 15,
-                            ),
-                            onPressed: () {
-                              print('IconButton pressed ...');
-                            },
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                  Container(
+                    width: 100,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF233446),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 30, 0, 0),
+                      child: Text(
+                        'INR',
+                        style: FlutterFlowTheme.title2.override(
+                          fontFamily: 'Poppins',
+                          color: Color(0xFFC2C2C2),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF15232E),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 30, 0, 0),
+                      child: Text(
+                        'IDR',
+                        style: FlutterFlowTheme.title2.override(
+                          fontFamily: 'Poppins',
+                          color: Color(0xFFC2C2C2),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF233446),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(20, 30, 0, 0),
+                      child: Text(
+                        'RUB',
+                        style: FlutterFlowTheme.title2.override(
+                          fontFamily: 'Poppins',
+                          color: Color(0xFFC2C2C2),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
